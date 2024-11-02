@@ -1,106 +1,187 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foodie - Hamburguesas Artesanales</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Hamburguesería</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="navbar-left">
-            <a class="navbar-brand" href="#home">Foodie</a>
-            <div class="navbar-nav" id="navbarNav">
-                <a class="nav-link" href="#home">Home</a>
-                <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#menu">Menu</a>
-                <a class="nav-link" href="#services">Services</a>
-                <a class="nav-link" href="#contact">Contact</a>
-            </div>
+    <nav class="mainNav">
+        <h2 class="brand">Foods</h2>
+        <div class="menuToggle">
+          <i class="fa fa-bars"></i>
         </div>
+        <ul class="navItems">
+          <li class="navItem"><a href="#home">Home</a></li>
+          <li class="navItem"><a href="#about">About</a></li>
+          <li class="navItem"><a href="#menu">Menu</a></li>
+          <li class="navItem"><a href="#service">Service</a></li>
+          <li class="navItem"><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <section class="hero section" id="home">
-        <div class="container">
-            <h1>Full Website</h1>
-            <p>Foods the <br> Most precious thing</p>
-            <a href="#menu" class="btn">Today's Menu</a>
-        </div>
-    </section>
-
-    <section class="about section" id="about">
-        <div class="container">
-            <h3>About us</h3>
-            <h2>We speak the good <br> food language</h2>
-            <p>It is a long established fact that a <br> be distracted by the readable content <br> looking at its layout.</p>
-            <a href="#menu" class="btn">Learn More</a>
-        </div>
-    </section>
-
-    <section class="menu section" id="menu">
-        <div class="container">
-            <h2 class="text-center">Fresh taste at great price</h2>
-            <div class="cards">
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="services section" id="services">
-        <div class="container">
-            <h2 class="text-center">We provide best food services</h2>
-            <div class="services-cards">
-                <div class="service">
-                    <span class="star-icon">★</span>
-                    <h3>Order</h3>
-                    <p>It is a long established fact that a reader will be looking at its layout.</p>
-                </div>
-                <div class="service">
-                    <span class="star-icon">★</span>
-                    <h3>Shipping</h3>
-                    <p>It is a long established fact that a reader will be looking at its layout.</p>
-                </div>
-                <div class="service">
-                    <span class="star-icon">★</span>
-                    <h3>Delivered</h3>
-                    <p>It is a long established fact that a reader will be looking at its layout.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-column">
-                <h3>Menu Links</h3>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#menu">Menu</a>
-                <a href="#services">Services</a>
-            </div>
-            <div class="footer-column">
-                <h3>Our Services</h3>
-                <a href="#">Web Design</a>
-                <a href="#">Web Development</a>
-                <a href="#">Marketing</a>
-                <a href="#">Product Management</a>
-            </div>
-            <div class="footer-column">
-                <h3>Information</h3>
-                <a href="#">About Us</a>
-                <a href="#">Delivery Information</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms & Conditions</a>
-            </div>
-            <div class="footer-column">
-                <h3>Contact Us</h3>
-                <p>contact@foodie.com</p>
-                <p>+123 456 7890</p>
-            </div>
-        </div>
-    </footer>
+    <div id="home">
+        <table class="mainContainer">
+            <tr>
+                <td class="halfSection leftContent">
+                    <h1>
+                        Full Website
+                    </h1>
+                    <h2 class="subtitle">
+                        Foods, the <br> most precious thing <br> <br>   
+                    <button> Today's menu</button>
+                </td>
+                <td class="halfSection">
+                    <img src="./media/home.png" alt="Home Image" class="heroImage">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="about">
+        <table>
+            <tr>
+                <td class="contentSection">
+                    <image src="./media/about.png" alt="aboutImg" class="sideImage">
+                </td>
+                <td class="contentSection">
+                    <p class="highlight contentBlock">About us</p>
+                    <h2 class="sectionTitle contentBlock">We speak the good <br>food language </h2>
+                    <p class="description contentBlock">It is  a long stablished fact that a <br> be distracted by the readable content <br> looking at its layout. The point of </p>
+                    <button class="contentBlock">Learn More</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="menu">
+        <table class="gridLayout">
+            <tr>
+                <td colspan="3">
+                    <p class="highlight gridTitle">Food Menu</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h2 class="sectionTitle">Fresh taste and great price</h2>
+                </td>                
+            </tr>
+            <tr>
+                <td class="lightBg gridItem">
+                    <img src="./media/food1.png" class="lightBg" alt="food1">
+                    <div class="lightBg">
+                        <div class="lightBg">Chicken Burger</div>
+                        <div class="lightBg">Tasty food<br></div>
+                        <div class="lightBg highlight">$11.00</div>  
+                    </div>
+                </td>
+                <td class="lightBg gridItem">
+                    <img src="./media/food2.png" class="lightBg" alt="food2">
+                    <div class="lightBg">
+                        <div class="lightBg">Special Beef Burger</div>
+                        <div class="lightBg">Tasty food<br></div>
+                        <div class="lightBg highlight">$11.00</div>  
+                    </div>
+                </td>
+                <td class="lightBg gridItem">
+                    <img src="./media/food3.png" class="lightBg" alt="food3">
+                    <div class="lightBg">
+                        <div class="lightBg">Chicken Fry Pack</div>
+                        <div class="lightBg">Tasty food<br></div>
+                        <div class="lightBg highlight">$11.00</div>  
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="service">
+        <table class="gridLayout">
+            <tr>
+                <td colspan="3">
+                    <p class="highlight gridTitle">Services</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h2 class="sectionTitle">We provide best food services</h2>
+                </td>                
+            </tr>
+            <tr>
+                <td class="gridItem">
+                    <img src="./media/s1.png" class="serviceImage" alt="service1">
+                    <div class="serviceHeading">Order</div>
+                    <div class="serviceText">It is a long established<br> be distracted by the readable </br> looking at its layout</div>
+                </td>
+                <td class="gridItem">
+                    <img src="./media/s2.png" class="serviceImage" alt="service2">
+                    <div class="serviceHeading">Shipping</div>
+                    <div class="serviceText">It is a long established<br> be distracted by the readable </br> looking at its layout</div>
+                </td>
+                <td class="gridItem">
+                    <img src="./media/s3.png" class="serviceImage" alt="service3">
+                    <div class="serviceHeading">Delivered</div>
+                    <div class="serviceText">It is a long established<br> be distracted by the readable </br> looking at its layout</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="contact">
+        <table>
+            <tr>
+                <td class="topSection">
+                    <div class="callout">
+                        We make quality food </br> Everyday</br>
+                        <button class="ctaButton">Learn More</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="bottomSection">
+                    <table class="footerGrid">
+                        <tr>
+                            <th>Menu Links</th>
+                            <th>Our Service</th>
+                            <th>Information</th>
+                            <th>Contact Us</th>
+                        </tr>
+                        <tr>
+                            <td>Home</td>
+                            <td>Web Design</td>
+                            <td>About Us</td>
+                            <td>
+                                <div class="socialContainer">
+                                    <div class="socialIcon"></div>
+                                    <div class="socialIcon"></div>
+                                    <div class="socialIcon"></div>
+                                    <div class="socialIcon"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>About</td>
+                            <td>Web Development</td>
+                            <td>Delivery Information</td>
+                        </tr>
+                        <tr>
+                            <td>Menu</td>
+                            <td>Marketing</td>
+                            <td>Privacy policy</td>
+                        </tr>
+                        <tr>
+                            <td>Service</td>
+                            <td>Product Management</td>
+                            <td>Terms and Conditions</td>
+                        </tr>
+                        <tr>
+                            <td>Contact</td>
+                            <td>Graphic Design</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="./js/index.js"></script>
 </body>
-</html>
+</html> 
